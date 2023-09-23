@@ -1,0 +1,317 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ais documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">ais documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  NavbartComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/navbart/navbart.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-navbart</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./navbart.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./navbart.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-navbart&#x27;,
+  templateUrl: &#x27;./navbart.component.html&#x27;,
+  styleUrls: [&#x27;./navbart.component.css&#x27;]
+})
+export class NavbartComponent {
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- navbar--&gt;
+&lt;nav class&#x3D;&quot;navbar navbar-expand-lg navbar-dark bg-transparent fixed-top&quot;&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;!-- logo--&gt;
+    &lt;a class&#x3D;&quot;navbar-brand fs-4 &quot;  href&#x3D;&quot;#&quot;&gt;AppInSciences&lt;/a&gt;
+    &lt;!--toggle--&gt;
+    &lt;button class&#x3D;&quot;navbar-toggler shadow-none border-opacity-100 border-5&quot; type&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;offcanvas&quot; data-bs-target&#x3D;&quot;#offcanvasNavbar&quot; aria-controls&#x3D;&quot;offcanvasNavbar&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+      &lt;span class&#x3D;&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;div class&#x3D;&quot;sidebar bg-transparent  offcanvas offcanvas-start&quot; tabindex&#x3D;&quot;-1&quot; id&#x3D;&quot;offcanvasNavbar&quot; aria-labelledby&#x3D;&quot;offcanvasNavbarLabel&quot;&gt;
+      &lt;!--sidebar header--&gt;
+      &lt;div class&#x3D;&quot;offcanvas-header text-white border-bottom&quot;&gt;
+        &lt;h5 class&#x3D;&quot;offcanvas-title&quot; id&#x3D;&quot;offcanvasNavbarLabel&quot;&gt;AppInSciences&lt;/h5&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot; btn-close  btn-close-white&quot; data-bs-dismiss&#x3D;&quot;offcanvas&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;offcanvas-body&quot;&gt;
+        &lt;ul class&#x3D;&quot;navbar-nav justify-content-end flex-grow-1 pe-3&quot;&gt;
+          &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+            &lt;a class&#x3D;&quot;nav-link active&quot; aria-current&#x3D;&quot;page&quot; href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+            &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;nav-item dropdown&quot;&gt;
+            &lt;a class&#x3D;&quot;nav-link dropdown-toggle&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot; data-bs-toggle&#x3D;&quot;dropdown&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+              About US
+            &lt;/a&gt;
+            &lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Who we are ?&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;What whe do ?&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;
+                &lt;hr class&#x3D;&quot;dropdown-divider&quot;&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;form class&#x3D;&quot;d-flex mt-3&quot; role&#x3D;&quot;search&quot;&gt;
+          &lt;input class&#x3D;&quot;form-control me-2&quot; type&#x3D;&quot;search&quot; placeholder&#x3D;&quot;Search&quot; aria-label&#x3D;&quot;Search&quot;&gt;
+          &lt;button class&#x3D;&quot;btn btn-outline-success&quot; type&#x3D;&quot;submit&quot;&gt;Search&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./navbart.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.sidebar{
+  backdrop-filter: blur(2px);
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- navbar--><nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">  <div class="container">    <!-- logo-->    <a class="navbar-brand fs-4 "  href="#">AppInSciences</a>    <!--toggle-->    <button class="navbar-toggler shadow-none border-opacity-100 border-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">      <span class="navbar-toggler-icon"></span>    </button>    <div class="sidebar bg-transparent  offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">      <!--sidebar header-->      <div class="offcanvas-header text-white border-bottom">        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AppInSciences</h5>        <button type="button" class=" btn-close  btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>      </div>      <div class="offcanvas-body">        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">          <li class="nav-item">            <a class="nav-link active" aria-current="page" href="#">Home</a>          </li>          <li class="nav-item">            <a class="nav-link" href="#">Link</a>          </li>          <li class="nav-item dropdown">            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">              About US            </a>            <ul class="dropdown-menu">              <li><a class="dropdown-item" href="#">Who we are ?</a></li>              <li><a class="dropdown-item" href="#">What whe do ?</a></li>              <li>                <hr class="dropdown-divider">              </li>              <li><a class="dropdown-item" href="#">Something else here</a></li>            </ul>          </li>        </ul>        <form class="d-flex mt-3" role="search">          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">          <button class="btn btn-outline-success" type="submit">Search</button>        </form>      </div>    </div>  </div></nav></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'NavbartComponent', 'selector': 'app-navbart'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NavbartComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NavbartComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

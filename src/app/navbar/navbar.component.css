@@ -1,0 +1,91 @@
+
+header{
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  padding: 20px 100px;
+  background: rgb(33, 66, 159,.1);
+  display :flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(90px);
+  border-bottom: 2px solid rgb(255, 255, 255,.2);
+}
+
+
+
+
+
+.logo{
+  color:black;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: default;
+  font-weight: 600;
+
+
+}
+
+.navbar a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  color: violet;
+}
+
+.button {
+  background-color: violet;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+
+}
+
+/* Additional styles for button on hover (optional) */
+.button:hover {
+  background-color: #2980b9; /* Change the background color on hover */
+  /* Add any other styles for the button when hovered */
+}
+
+#icon{
+  font-size: 36px;
+  color: white ;
+  display: none ;
+}
+
+@media (max-width: 914px) {
+  #icon{
+    display: block;
+  }
+
+  .navbar{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: .5erm 4%;
+    background: rgb(33, 66, 159,.1);
+    border-radius: 2px solid rgb(255, 255, 255,.2);
+    display: none;
+
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.5erm 0;
+    padding: 5px;
+  }
+}
